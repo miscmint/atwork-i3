@@ -212,7 +212,6 @@ exec_always feh --bg-scale ~/.config/i3/wallpaper.png
 exec slack
 exec thunderbird
 exec phpstorm
-exec thunar
 exec xdg-open https://absence.io
 exec xdg-open ~/Dokumente/test.kdbx
 
@@ -228,8 +227,7 @@ bindsym $mod+Shift+i exec i3lock -i ~/.config/i3/wallpaper-i3lock.png
 focus_follows_mouse no
 
 # Screenshot
-#bindsym Print exec ~/.config/i3/scripts/screenshot.sh
-bindsym Print exec "import -window root ~/Bilder/Screenshot-$(date +%F-%H:%M:%S).png"
+bindsym Print exec ~/.config/i3/scripts/screenshot.sh
 
 exec_always xrandr --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-0 --mode 1680x1050 --pos 1920x0 --rotate normal
 #exec_always xrandr --output VGA-0 --mode 1680x1050 --pos 1920x0 --rotate normal --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal
