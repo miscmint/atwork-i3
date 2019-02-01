@@ -216,8 +216,8 @@ exec xdg-open https://absence.io
 exec xdg-open ~/Dokumente/test.kdbx
 
 bindsym $mod+c exec google-chrome
-bindsym $mod+t exec thunar $(find ~/Dokumente -type d | dmenu -fn monospace -l 100)
-bindsym $mod+o exec xdg-open $(find ~/Dokumente -type f | dmenu -fn monospace -l 100)
+bindsym $mod+t exec thunar "$(find ~/Dokumente -type d | dmenu -fn monospace -l 100)"
+bindsym $mod+o exec xdg-open "$(find ~/Dokumente -type f | dmenu -fn monospace -l 100)"
 bindsym $mod+u exec ~/.config/i3/scripts/unmount.sh
 
 #bindsym $mod+Shift+i exec i3lock -c 111111
