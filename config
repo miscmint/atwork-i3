@@ -163,7 +163,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'i3 beenden? Hast du bei absence.io auf Stop geklickt?' -b 'i3 beenden (ABSENCE.IO ?)' 'i3-msg exit'"
+bindsym $mod+Shift+e exec ~/.config/i3/scripts/exitI3.sh
 #bindsym $mod+Shift+e exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
