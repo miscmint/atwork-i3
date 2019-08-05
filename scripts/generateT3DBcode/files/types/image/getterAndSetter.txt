@@ -1,0 +1,16 @@
+    /**
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+     */
+    public function getUPPERCASEFIELDNAMECAMELCASE(): ?\TYPO3\CMS\Extbase\Persistence\ObjectStorage
+    {
+        return $this->FIELDNAMECAMELCASE;
+    }
+
+    /**
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $FIELDNAMECAMELCASE
+     */
+    public function setUPPERCASEFIELDNAMECAMELCASE(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $FIELDNAMECAMELCASE): void
+    {
+        $this->FIELDNAMECAMELCASE = $FIELDNAMECAMELCASE;
+    }
+

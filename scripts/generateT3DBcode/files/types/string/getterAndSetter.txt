@@ -1,0 +1,16 @@
+    /**
+     * @return string
+     */
+    public function getUPPERCASEFIELDNAMECAMELCASE(): ?string
+    {
+        return $this->FIELDNAMECAMELCASE;
+    }
+
+    /**
+     * @param string $FIELDNAMECAMELCASE
+     */
+    public function setUPPERCASEFIELDNAMECAMELCASE(string $FIELDNAMECAMELCASE): void
+    {
+        $this->FIELDNAMECAMELCASE = $FIELDNAMECAMELCASE;
+    }
+

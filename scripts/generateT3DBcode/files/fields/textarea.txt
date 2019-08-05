@@ -1,0 +1,8 @@
+        'FIELDNAME' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:EXTENSIONNAME/Resources/Private/Language/locallang_db.xlf:tx_EXTENSIONNAME.FIELDNAME',
+            'config' => [
+                'type' => 'text',
+                'enableRichtext' => true,
+            ],
+        ],

@@ -1,0 +1,7 @@
+    /**
+     * FIELDNAMECAMELCASE
+     *
+     * @var int
+     */
+    protected $FIELDNAMECAMELCASE;
+
