@@ -234,11 +234,9 @@ focus_follows_mouse no
 # Screenshot
 bindsym Print exec ~/.config/i3/scripts/screenshot.sh
 
-# Clear TYPO3 frontend cache via xdotool
-bindsym $mod+p exec ~/.config/i3/scripts/clearT3Cache.sh
+# Open Thunar when new file in Downloads directory
+exec ~/.config/i3/scripts/download.sh
 
-# two clicks
-bindsym $mod+Shift+p exec ~/.config/i3/scripts/twoClicks.sh
 
 exec_always xrandr --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-0 --mode 1680x1050 --pos 1920x0 --rotate normal
 #exec_always xrandr --output VGA-0 --mode 1680x1050 --pos 1920x0 --rotate normal --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal
