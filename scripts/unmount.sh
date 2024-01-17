@@ -9,4 +9,4 @@ else
 	notify-send -t 3000 -u critical 'Unmount nicht möglich, wahrscheinlich wird ein Gerät noch verwendet oder alle Geräte sind schon entfernt.'
 fi
 
-exit
+exit 0

@@ -12,7 +12,7 @@ else
 	info=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep 'time to full' | awk {'printf ("(%s %s )", $4, $5)'})
 fi
 
-if [ $percentageInt -lt 5 ]
+if [ $percentageInt -lt 20 ]
 then
 	if [ $state == 'discharging' ]
 	then

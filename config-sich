@@ -37,8 +37,8 @@ bindsym $mod+Shift+q kill
 bindsym --release button2 kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -i -m 1 -fn monospace -l 100
-bindsym mod1+space exec dmenu_run -i -m 1 -fn monospace -l 100
+bindsym $mod+d exec dmenu_run -i -m 0 -fn monospace -l 100
+bindsym mod1+space exec dmenu_run -i -m 0 -fn monospace -l 100
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -150,11 +150,11 @@ assign [class="Thunderbird"] $workspace10
 assign [class="thunderbird"] $workspace10
 
 # assign workspaces to screens
-workspace $workspace1 output HDMI-1
-workspace $workspace2 output HDMI-1
-workspace $workspace3 output HDMI-1
-workspace $workspace4 output HDMI-1
-workspace $workspace5 output HDMI-1
+workspace $workspace1 output HDMI-1-1
+workspace $workspace2 output HDMI-1-1
+workspace $workspace3 output HDMI-1-1
+workspace $workspace4 output HDMI-1-1
+workspace $workspace5 output HDMI-1-1
 workspace $workspace6 output eDP-1
 workspace $workspace7 output eDP-1
 workspace $workspace8 output eDP-1
@@ -233,7 +233,7 @@ exec xdg-open ~/Documents/test.kdbx
 
 bindsym $mod+c exec google-chrome
 bindsym $mod+t exec ~/.config/i3/scripts/nautilus.sh
-bindsym $mod+o exec xdg-open "$(find ~/Documents -type f | dmenu -i -m 1 -fn monospace -l 100)"
+bindsym $mod+o exec xdg-open "$(find ~/Documents -type f | dmenu -i -m 0 -fn monospace -l 100)"
 bindsym $mod+u exec ~/.config/i3/scripts/unmount.sh
 bindsym $mod+n exec ~/.config/i3/scripts/openInPhpStorm.sh ~/www/
 bindsym $mod+Shift+n exec ~/.config/i3/scripts/generateT3DBcode/generateT3DBcode.sh ~/www/
@@ -250,11 +250,8 @@ bindsym Print exec ~/.config/i3/scripts/screenshot.sh
 # Open Dolphin when new file in Downloads directory
 exec ~/.config/i3/scripts/download.sh
 
-# Start mailpit
-exec /usr/local/bin/mailpit
-
-exec_always xrandr --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off
-#exec_always xrandr --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off
+exec_always xrandr --output HDMI-1-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-1 --off --output DP-1-2 --off
+#exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-1 --off --output DP-1-2 --off
 #exec_always xrandr --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-0 --mode 1920x1080 --pos 1920x0 --rotate normal
 #exec_always xrandr --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-0 --mode 1680x1050 --pos 1920x0 --rotate normal
 
